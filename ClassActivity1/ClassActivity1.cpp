@@ -1,22 +1,50 @@
 // ClassActivity1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Joseph Ellis
 
 #include <iostream>
 
 using namespace std;
 
+class Dog {
+
+	private:
+	// Declaring Member Variables
+	string name;
+	int age;
+	string breed;
+
+	public:
+	// Setter Functions:
+	void setName(string dogName){
+		name = dogName;
+	}
+	void setAge(int dogAge) {
+		age = dogAge;
+	}
+	void setBreed(string dogBreed) {
+		breed = dogBreed;
+	}
+
+	// Getter Functions:
+	string getName() {
+		return name;
+	}
+	int getAge() {
+		return age;
+	}
+	string getBreed() {
+		return breed;
+	}
+
+	// Function to print "Woof! Woof!":
+	void bark() {
+		cout << "Woof! Woof!" << endl;
+	}
+};
+
+
+
 int main()
 {
 	cout << "Hello World!\n";
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
